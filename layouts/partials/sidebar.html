@@ -1,8 +1,10 @@
 <div id="secondary">
-    <section class="widget">
-        {{ partial "search_form" . }}
-    </section>
-    
+    {{ if .Site.Params.localSearch }}
+        <section class="widget">
+            {{ partial "search_form" . }}
+        </section>
+    {{ end }}
+
     <section class="widget">
         {{ partial "recent_post" . }}
     </section>
@@ -19,10 +21,10 @@
 
     {{ partial "links" . }}
 
-    <section class="widget">
+    <!-- <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
             <li><a href="{{ "index.xml" | absURL }}">文章 RSS</a></li>
         </ul>
-    </section>
+    </section> -->
 </div>
