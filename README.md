@@ -12,7 +12,7 @@ Maupassant theme, ported to Hugo.
 
 ## 功能特性
 
-1. 支持Local Search 站内搜索
+~~1. 支持Local Search 站内搜索~~
 2. 最近发表的文章支持，显示最近的10篇 
 3. 分类支持，并且可以显示分类内的文章数量
 4. 标签云支持
@@ -22,20 +22,21 @@ Maupassant theme, ported to Hugo.
 6. 自定义菜单支持，不限个数，自定义排序
 7. 自定义友情链接支持
 8. 支持文章按年份日期进行归档
-9. 支持GA分析统计
+~~9. 支持GA分析统计~~
 17. 不蒜子页面计数器支持，全站访问统计
 11. 代码高亮、代码行号
 10. sitemap站点地图
 5. RSS支持，并且可以自动发现RSS
-14. Google站内搜索
+~~14. Google站内搜索~~
 15. See Also 支持
-16. Disqus评论支持
+~~16. Disqus评论支持~~
 18. 自定义css、js
 19. utteranc评论
 20. 部分自定义的shortcode
 21. 文章自定义摘要
 22. 自定义广告支持
 23. 支持`备案号`添加
+24. 支持`百度`统计
 
 ## 下载安装
 
@@ -67,6 +68,14 @@ theme = "maupassant"
 **PS: 一定要使用`post`目录，而不是`posts`,一定要记住，所以如果你使用`hugo`命令，你应该`hugo new post/filename.md`这样创建**
 
 
+#### 百度统计
+
+配制百度统计的唯一标识
+
+```toml
+[params]
+  baiduAd = "ac69e1e54b317232c0d3a881b738cfe8"
+```
 
 #### 代码高亮
 
@@ -400,7 +409,7 @@ disablePathToLower = true
   ​```
   ```
 
-### 备案号
+#### 备案号
 
 使用备案号功能时，将以下代码`取消注释`并设置自己的备案号
 
