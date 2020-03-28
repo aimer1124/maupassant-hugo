@@ -1,7 +1,12 @@
 <footer id="footer">
     <div class="container">
         &copy; 2015-2020, By {{ .Site.Author.name }}</a>。
-        备案号：<a href="http://www.beian.miit.gov.cn" target="_blank">陕ICP备20003547号-1</a>
+        {{ if .Site.Params.busuanzi }}
+        访客 <span id="busuanzi_value_site_uv"></span> 人次 | 访问 <span id="busuanzi_value_site_pv"></span> 次。
+        {{ end }}
+        {{ if .Site.Params.beian}}
+        备案号：<a href="http://www.beian.miit.gov.cn" target="_blank">{{.Site.Params.beian}}</a>
+        {{ end }}
         {{ if .Site.Params.showHostPage }}
         Hosted by <a rel="nofollow noreferer noopener" href="https://pages.coding.me" target="_blank">Coding Pages</a>.
         {{ end }}
