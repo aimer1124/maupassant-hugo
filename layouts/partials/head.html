@@ -48,6 +48,17 @@
     </script>
     {{ end }}
 
+    {{ if .Site.Params.baiduAd}}
+    <script>
+        var _hmt = _hmt || []; 
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?ac69e1e54b317232c0d3a881b738cfe8";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    {{ end }}
 
     <!-- custom css -->
     {{ range .Site.Params.customCSS }}
