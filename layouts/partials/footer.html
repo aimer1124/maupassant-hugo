@@ -1,6 +1,6 @@
 <footer id="footer">
     <div class="container">
-        &copy; 2015-2020, By {{ .Site.Author.name }}</a>。
+        &copy; {{ now.Format "2006" }}, By {{ .Site.Author.name }}</a>。
         {{ if .Site.Params.busuanzi }}
         访客 <span id="busuanzi_value_site_uv"></span> 人次 | 访问 <span id="busuanzi_value_site_pv"></span> 次。
         {{ end }}
